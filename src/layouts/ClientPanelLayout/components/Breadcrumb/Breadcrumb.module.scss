@@ -1,0 +1,10 @@
+@import 'assets/variables.scss';
+
+.breadcrumb {
+	display: flex;
+	margin: auto 0;
+
+	@media screen and (max-width: #{$screen-antd-sm-min}) {
+		display: none;
+	}
+}

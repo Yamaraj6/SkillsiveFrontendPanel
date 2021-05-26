@@ -1,0 +1,59 @@
+@import 'assets/colors.scss';
+
+.menu {
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	// &__sub-menu {
+	// 	padding-left: 2rem;
+	// 	margin: 1rem;
+	// }
+
+	&__sub-menu {
+		padding-left: 1.2rem !important;
+	}
+
+	&__sub-menu-drop {
+		padding-left: 0rem !important;
+	}
+
+	&__section {
+		width: 100%;
+		padding-top: 1.5rem;
+		padding-bottom: 2rem;
+		padding-left: 1rem;
+		color: $color-white;
+		letter-spacing: 0.2rem;
+		animation-name: not-collapsed-text;
+		animation-duration: 0.2s;
+
+		@keyframes not-collapsed-text {
+			from {
+				font-size: 1rem;
+				padding-left: 0rem;
+			}
+			to {
+				font-size: 1.6rem;
+				padding-left: 1rem;
+			}
+		}
+
+		&--collapsed {
+			padding-left: 0rem;
+			font-size: 1rem;
+			animation-name: collapsed-text;
+			animation-duration: 0.2s;
+
+			@keyframes collapsed-text {
+				from {
+					font-size: 1.6rem;
+					padding-left: 1rem;
+				}
+				to {
+					font-size: 1rem;
+					padding-left: 0rem;
+				}
+			}
+		}
+	}
+}

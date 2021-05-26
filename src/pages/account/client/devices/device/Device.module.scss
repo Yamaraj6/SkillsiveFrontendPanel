@@ -1,0 +1,285 @@
+@import 'assets/colors.scss';
+@import 'assets/variables.scss';
+@import 'assets/mixins.scss';
+
+.main {
+	display: flex;
+	flex-direction: row;
+
+	table {
+		tbody {
+			tr {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.device-container {
+	@include main-content-box;
+	padding: 1.9rem 3rem 3.3rem;
+	max-width: 55.9rem;
+	margin-right: 2.8rem;
+
+	&__head-series {
+		width: 100%;
+		display: flex;
+		float: right;
+		justify-content: flex-end;
+		margin-bottom: 1.5rem;
+
+		div {
+			display: flex;
+			width: 56%;
+			align-items: center;
+			justify-content: space-between;
+
+			p {
+				margin: 0;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	&__header {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+
+		& > div {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding-bottom: 2rem;
+
+			& > span {
+				width: 35%;
+				font-size: 1.6rem;
+				color: $color-grey;
+				padding-right: 3.6rem;
+			}
+
+			& > div {
+				color: $color-blue;
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+	&__remote {
+		width: 100%;
+		padding-bottom: 5rem;
+	}
+}
+
+.googles {
+	max-width: 17rem;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	width: 56%;
+	margin-bottom: 3.4rem;
+	color: $color-dark;
+
+	h2 {
+		font-weight: 600;
+		color: $color-dark;
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__device-number {
+		@include device-number;
+		margin-bottom: 2rem;
+	}
+
+	&__device-color {
+		background: $color-orange 0% 0% no-repeat padding-box; // kolor jest na sztywno zmienic jak przyjda dane
+		border-radius: 1.4rem;
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+}
+
+.type-value {
+	color: $color-blue;
+	font-size: 2.2rem;
+}
+
+.number-value {
+	color: $color-dark;
+	font-size: 2.2rem;
+}
+
+.range-value {
+	span {
+		&:first-of-type {
+			color: $color-blue;
+			font-size: 2.2rem;
+		}
+
+		&:last-of-type {
+			color: $color-grey;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.remote-headline {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+}
+
+.input-container {
+	width: 100%;
+
+	&__select {
+		display: flex;
+		align-items: center;
+		padding-bottom: 1rem;
+
+		img {
+			padding-right: 3rem;
+		}
+	}
+}
+
+.select-form-item {
+	width: 100%;
+
+	label {
+		font-weight: 500;
+		color: $color-grey;
+		font-size: 1.6rem;
+	}
+}
+
+.select {
+	width: 100%;
+}
+
+.button {
+	border-radius: 8px;
+	height: 4.8rem;
+	width: 22rem;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		padding-left: 1rem;
+	}
+
+	&__finish {
+		color: $color-blue;
+		background: $color-blue-4 0% 0% no-repeat padding-box;
+	}
+
+	&__delete {
+		float: right;
+		color: $color-dark;
+		background: $color-grey-4 0% 0% no-repeat padding-box;
+	}
+}
+
+.submit-container {
+	& > div {
+		& > div {
+			& > div {
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+	}
+}
+
+.status-box {
+	color: $color-white;
+	font-size: 1.4rem;
+	border-radius: 6rem;
+	padding: 0;
+	height: 2rem;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	width: 6rem;
+
+	&--active {
+		color: $color-white;
+		background: $color-success 0% 0% no-repeat padding-box;
+	}
+
+	&--online {
+		color: $color-white;
+		background: $color-success 0% 0% no-repeat padding-box;
+	}
+}
+
+.table-container {
+	@include main-content-box;
+}
+
+.content-container {
+	width: 100%;
+
+	& > div:first-of-type {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: flex-start;
+
+		button {
+			color: $color-blue;
+		}
+	}
+}
+
+.content-button {
+	width: 100%;
+	text-transform: uppercase;
+	height: 4.2rem;
+	width: 19.7rem;
+	background: transparent;
+	border: 1px solid $color-blue;
+	border-radius: 8px;
+	font-size: 1.6rem;
+	margin-right: 2rem;
+	margin-bottom: 3rem;
+
+	&--active {
+		color: $color-white !important;
+		background: $color-blue;
+	}
+
+	&:focus {
+		color: $color-white;
+		background: $color-blue;
+	}
+}
+
+.pager {
+	width: unset !important;
+}

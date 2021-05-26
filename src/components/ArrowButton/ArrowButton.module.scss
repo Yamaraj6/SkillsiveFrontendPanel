@@ -1,0 +1,40 @@
+@import 'assets/colors.scss';
+@import 'assets/variables.scss';
+
+.arrow-btn {
+	background: $color-grey-5;
+	border-radius: 0.8rem;
+	border: 0.1rem solid $color-grey-5;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	pointer-events: none;
+
+	@media screen and (min-width: #{$screen-sm-min}) {
+		width: 4.2rem;
+		height: 4.2rem;
+	}
+
+	svg {
+		fill: $color-grey;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&.active {
+		cursor: pointer;
+		pointer-events: initial;
+		background: $color-white;
+
+		svg {
+			fill: $color-blue;
+		}
+	}
+
+	&.back svg {
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,113 @@
+@import 'assets/colors.scss';
+
+.table {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		margin-bottom: 4rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			border-bottom: 0.1rem solid $color-grey-3;
+			width: calc(100% - 1rem);
+			bottom: -2rem;
+		}
+	}
+
+	&__check-all {
+		font-size: 1.2rem;
+		letter-spacing: 0rem;
+		margin: 1rem 0;
+
+		span {
+			color: $color-black;
+		}
+	}
+
+	& > div {
+		& > div:last-of-type {
+			& > div {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.head {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+
+	& > div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.checkbox {
+	padding-right: 2rem;
+	align-self: center;
+}
+
+.dropdown {
+	padding-left: 2rem;
+
+	a {
+		img {
+			width: 2.5rem;
+		}
+	}
+}
+
+.tbody {
+	width: 100%;
+	font-size: 1.2rem;
+
+	& > div {
+		align-items: center;
+		margin: 0.5rem 0;
+		color: $color-grey;
+	}
+}
+
+.single-row {
+	font-size: 1.4rem;
+	color: $color-dark;
+	padding-left: 3rem;
+
+	span {
+		div {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-left: 2rem;
+		}
+	}
+}
+
+.single-col {
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	span {
+		display: block;
+		min-width: 13rem;
+	}
+}
+
+.status {
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	font-weight: bold;
+	text-transform: capitalize;
+}

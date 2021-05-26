@@ -1,0 +1,152 @@
+@import 'assets/mixins.scss';
+@import 'assets/colors.scss';
+
+.main {
+	padding: 2rem;
+	@include main-content-box;
+	min-height: calc(100vh - 18rem);
+}
+
+.header {
+	background: #a7b4cb26 0% 0% no-repeat padding-box;
+	border-radius: 0.8rem;
+	padding: 1.3rem 5.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+
+	h2 {
+		margin: 0;
+		font-size: 1.6rem;
+		color: $color-black;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.133rem;
+	}
+
+	&__left-box,
+	&__right-box {
+		width: 50%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
+.skill-container {
+	margin: 5.9rem auto;
+	padding: 0 5.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	border-bottom: 0.1rem solid $color-grey-4;
+}
+
+.question-box {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-right: 3%;
+
+	p {
+		color: $color-grey;
+		font-size: 2.2rem;
+		margin-bottom: 2.8rem;
+	}
+}
+
+.answer-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 3.6rem;
+
+		p {
+			margin: 0;
+			color: $color-dark;
+			font-size: 2.2rem;
+		}
+	}
+}
+
+.checkbox {
+	margin-right: 3.3rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	background: $color-white;
+	border: 0.1rem solid $color-grey;
+	border-radius: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__checked {
+		background: $color-success;
+		border-color: $color-success;
+	}
+
+	&__right-answer {
+		border-color: $color-error;
+	}
+}
+
+.information-box {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+
+	&__row {
+		border: 0.1rem solid $color-grey-4;
+		border-radius: 0.8rem;
+		padding: 1rem;
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: row;
+		width: 23.8rem;
+		font-size: 1.6rem;
+		color: $color-black;
+		justify-content: space-between;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	&__type {
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-left: 1rem;
+		}
+	}
+
+	&__value {
+		color: $color-success;
+
+		.score {
+			font-weight: bold;
+			font-size: 2.2rem;
+		}
+
+		.good-answer {
+			font-weight: bold;
+			font-size: 2.2rem;
+		}
+
+		.duration {
+			color: $color-grey;
+			font-size: 2rem;
+			font-weight: 500;
+		}
+	}
+}

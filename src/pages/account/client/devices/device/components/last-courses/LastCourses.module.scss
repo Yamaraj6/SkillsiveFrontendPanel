@@ -1,0 +1,34 @@
+@import 'assets/colors.scss';
+@import 'assets/mixins.scss';
+
+.user-info {
+	font-size: 2.2rem;
+	color: $color-dark;
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+
+	span {
+		width: 100%;
+		color: $color-grey;
+		font-size: 1.8rem;
+	}
+}
+
+.user-score {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		padding-right: 2rem;
+	}
+}
+
+.progress-bar {
+	@include progress-bar;
+}
+
+.device-info {
+	@include device-info;
+}

@@ -1,0 +1,15 @@
+.previous {
+	left: 0 !important;
+}
+
+.next {
+	right: 0 !important;
+}
+
+.previous,
+.next {
+	z-index: 999;
+	width: 2.8rem !important;
+	height: 2.8rem !important;
+	top: 2.5rem !important;
+}

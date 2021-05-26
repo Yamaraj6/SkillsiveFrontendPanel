@@ -1,0 +1,29 @@
+@import 'assets/colors.scss';
+
+.main {
+	padding: 2.3rem 2.6rem;
+}
+
+.special {
+	line-height: initial;
+	margin-right: 7rem;
+	margin-bottom: 7rem;
+}
+
+.infoBox-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__box,
+	&__special {
+		margin-right: 7rem;
+		margin-bottom: 7rem;
+	}
+
+	&__special {
+		line-height: initial !important;
+	}
+}

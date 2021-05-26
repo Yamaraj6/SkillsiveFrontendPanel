@@ -1,0 +1,40 @@
+@import 'assets/colors.scss';
+
+.info-box {
+	height: 9.2rem;
+	min-width: 24rem;
+	background: $color-white 0% 0% no-repeat padding-box;
+	box-shadow: 0rem 1rem 4rem$color-shadow-grey;
+	border-radius: 10px;
+	font-size: 3.9rem;
+	color: $color-dark;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	line-height: revert;
+
+	&__inner-left {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+
+		span {
+			margin: 0;
+			padding: 0;
+			font-size: 1.6rem;
+			color: $color-grey;
+		}
+	}
+
+	&__inner-right {
+		align-items: center;
+		display: flex;
+
+		img {
+			max-width: 4.8rem;
+		}
+	}
+}

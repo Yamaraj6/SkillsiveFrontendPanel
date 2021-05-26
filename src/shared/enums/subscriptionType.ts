@@ -1,0 +1,9 @@
+export enum SubscriptionType {
+	FREE = 1,
+	STANDARD = 2,
+	PROFFESIONAL = 3,
+	ENTERPRISE = 4,
+	YEARLY_STANDARD = 5,
+	YEARLY_PROFFESIONAL = 6,
+	YEARLYE_NTERPRISE = 7
+}

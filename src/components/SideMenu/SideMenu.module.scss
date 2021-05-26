@@ -1,0 +1,85 @@
+@import 'assets/colors.scss';
+
+.sider {
+	height: calc(100vh - 8rem);
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+
+	& > div {
+		height: 100%;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			background: #313846;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #313846;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #313846;
+		}
+	}
+
+	&__open-btn {
+		position: absolute;
+		bottom: 3rem;
+		left: 23rem;
+		cursor: pointer;
+		animation-name: close-btn-show;
+		animation-duration: 0.6s;
+
+		@keyframes close-btn-show {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		img {
+			height: 2rem;
+		}
+	}
+
+	&__collapse-btn {
+		position: absolute;
+		bottom: 3rem;
+		left: 2rem;
+		cursor: pointer;
+		animation-name: open-btn-show;
+		animation-duration: 0.6s;
+		z-index: 200;
+
+		@keyframes open-btn-show {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		img {
+			height: 2rem;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.drawer {
+	padding-top: 10rem;
+
+	&__open-btn {
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
+		background-color: $color-white;
+		z-index: 200;
+		padding: 1rem;
+		border-radius: 1rem;
+		box-shadow: 0rem 1rem 2rem $color-shadow-blue;
+	}
+}

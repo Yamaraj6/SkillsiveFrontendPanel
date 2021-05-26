@@ -1,0 +1,49 @@
+@import 'assets/colors.scss';
+
+.a {
+	fill: $color-dark;
+
+	&--blue {
+		fill: $color-blue;
+	}
+
+	&--stroke-blue {
+		fill: none;
+		stroke: $color-blue;
+	}
+
+	&--stroke-line-blue {
+		stroke: $color-blue;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		fill: none;
+	}
+
+	&--hover {
+		filter: drop-shadow(0rem 0.4rem 1rem $color-shadow-blue);
+	}
+
+	&--grey {
+		opacity: 0.5;
+	}
+}
+
+.b {
+	fill: $color-grey;
+}
+
+.success {
+	fill: $color-success;
+}
+
+.blank {
+	fill: none;
+}
+
+.check-circle {
+	fill: none;
+	stroke: $color-blue;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 1.5px;
+}

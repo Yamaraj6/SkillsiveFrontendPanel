@@ -1,0 +1,40 @@
+@import 'assets/colors';
+
+.select-container {
+	position: relative;
+	max-width: 33.5rem;
+	width: 100%;
+}
+
+.select {
+	width: 100%;
+	height: 4.2rem;
+	background: $color-white !important;
+
+	& > div {
+		background: $color-white !important;
+	}
+
+	& > span {
+		left: 30%;
+	}
+}
+
+.no-icon {
+	& > span {
+		display: none !important;
+	}
+}
+
+.icon {
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translate(0rem, -50%);
+}
+
+.dropdown-icon {
+	&--active {
+		transform: rotate(180deg);
+	}
+}

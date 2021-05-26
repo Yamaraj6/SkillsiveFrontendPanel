@@ -1,0 +1,50 @@
+@import 'assets/colors.scss';
+@import 'assets/variables.scss';
+@import 'assets/mixins.scss';
+
+.main-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.content-container {
+	width: 100%;
+	margin: 2rem auto;
+}
+
+.filter-container {
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+.filter-bar {
+	@media screen and (max-width: 1800px) {
+		& > div {
+			flex-wrap: wrap !important;
+			justify-content: flex-start;
+
+			& > div {
+				margin-top: 2rem;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.table-container {
+	@include main-content-box;
+}
+
+.user-icon {
+	border-radius: 0.8rem;
+	max-width: 6rem;
+	max-height: 6rem;
+}
+
+.user-name {
+	font-size: 2.2rem;
+}

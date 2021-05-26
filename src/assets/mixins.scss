@@ -1,0 +1,237 @@
+@import './variables';
+@import './colors';
+
+@mixin sm {
+	@media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media screen and (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+@mixin main-content-box {
+	width: 100%;
+	padding: 1%;
+	background: $color-white 0% 0% no-repeat padding-box;
+	box-shadow: 0rem 1rem 4rem $color-shadow-grey;
+	border-radius: 1rem 1rem 1rem 0rem;
+}
+
+@mixin accountBox {
+	position: relative;
+	background-color: $color-white;
+	border-radius: 0.8rem;
+	width: 100%;
+	max-width: 42rem;
+	padding: 1.5rem 2.5rem 3rem;
+
+	@media screen and (min-width: #{$screen-sm-min}) {
+		box-shadow: 0 4.5rem 9rem $color-shadow-blue-1;
+		padding: 1.5rem 3rem;
+	}
+
+	& > div:first-child {
+		margin: 1rem auto 1rem;
+		width: 80%;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	p {
+		margin-top: 1rem;
+		font-size: 1.4rem;
+		color: $color-grey;
+	}
+
+	button {
+		width: 100%;
+		height: 4.8rem;
+		margin-top: 1rem;
+		text-transform: uppercase;
+	}
+
+	a {
+		cursor: pointer;
+		color: $color-blue;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@mixin back-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color-blue-2;
+	color: $color-blue;
+	transition: all 0.3s;
+
+	&:hover {
+		background: lighten($color-blue-2, 10%);
+	}
+
+	svg {
+		transform: rotate(90deg);
+		margin-right: 2rem;
+		width: 1rem;
+		height: 1rem;
+	}
+}
+
+@mixin device-number {
+	width: 4.8rem;
+	height: 4.8rem;
+	color: $color-grey;
+	border: 0.1rem solid $color-grey-3;
+	border-radius: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.4rem;
+}
+
+@mixin progress-bar {
+	border: 0.1rem solid $color-success;
+	border-radius: 0.6rem;
+	width: 7.4rem;
+	height: 2.4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin device-info {
+	display: flex;
+	flex-direction: column;
+
+	img {
+		max-width: 4.9rem;
+		margin-bottom: 0.7rem;
+	}
+
+	span {
+		color: $color-grey;
+		font-size: 1.4rem;
+	}
+}
+
+@mixin select-with-icons {
+	.box {
+		display: flex;
+		align-items: center;
+
+		div {
+			padding-left: 0 !important;
+		}
+	}
+
+	.select {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		outline: none !important;
+		box-shadow: none !important;
+
+		& > div {
+			background-color: unset !important;
+			box-shadow: unset !important;
+		}
+	}
+
+	.option {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-right: 1rem;
+
+		span {
+			margin: 0 1.3rem;
+		}
+	}
+
+	.dropdown {
+		border-radius: 1rem;
+	}
+
+	.dropdown-icon {
+		&--active {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+@mixin Button-dimensions {
+	border-radius: 0.8rem;
+	width: 100%;
+	height: 4.8rem;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin Button-1 {
+	background: transparent radial-gradient(closest-side at 25% -65%, #96d5ff 0%, #2c89c8 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 1rem 2rem $color-shadow-blue;
+	@include Button-dimensions;
+
+	&:hover {
+		background: transparent radial-gradient(closest-side at 25% -65%, #96d5ff 0%, #2c89c8 100%) 0% 0% no-repeat padding-box !important;
+	}
+
+	&:focus {
+		background: transparent radial-gradient(closest-side at 25% -65%, #96d5ff 0%, #2c89c8 100%) 0% 0% no-repeat padding-box !important;
+	}
+}
+@mixin Button-2 {
+	@include Button-dimensions;
+	background: transparent radial-gradient(closest-side at 40% -135%, #96d5ff 0%, #2c89c8 100%) 0% 0% no-repeat padding-box;
+}
+
+@mixin Button-3 {
+	@include Button-dimensions;
+	background: $color-blue 0% 0% no-repeat padding-box;
+}
+
+@mixin Button-4 {
+	@include Button-dimensions;
+	background: $color-blue-3 0% 0% no-repeat padding-box;
+}
+
+@mixin Button-5 {
+	@include Button-dimensions;
+	background: $color-grey-3 0% 0% no-repeat padding-box;
+}
+
+@mixin Button-6 {
+	@include Button-dimensions;
+	border: 1px solid #3c9cde;
+	background: transparent;
+}

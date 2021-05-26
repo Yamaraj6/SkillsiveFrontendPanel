@@ -1,0 +1,12 @@
+@import 'assets/variables.scss';
+
+.mobile {
+	position: relative;
+	left: -3.5rem;
+	width: 106vw;
+
+	@media screen and (min-width: $screen-xs-min) {
+		width: unset;
+		left: unset;
+	}
+}

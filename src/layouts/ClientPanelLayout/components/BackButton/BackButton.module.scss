@@ -1,0 +1,12 @@
+@import 'assets/variables.scss';
+
+.back-btn {
+	cursor: pointer;
+	padding-right: 1rem;
+	display: none;
+	padding-top: 0.3rem;
+
+	@media screen and (max-width: #{$screen-antd-sm-min}) {
+		display: block;
+	}
+}

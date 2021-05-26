@@ -1,0 +1,87 @@
+@import 'assets/colors.scss';
+
+.main {
+	display: flex;
+	flex-direction: row;
+	font-size: 1.8rem;
+
+	li {
+		padding-right: 6rem;
+
+		a {
+			color: $color-dark;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+}
+
+.drawer {
+	padding-top: 10rem;
+
+	&__open-btn {
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
+		background-color: $color-white;
+		z-index: 200;
+		padding: 1rem;
+		border-radius: 1rem;
+		box-shadow: 0rem 1rem 2rem $color-shadow-blue;
+	}
+}
+
+.menu {
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	&__sub-menu {
+		padding-left: 1.2rem !important;
+	}
+
+	&__sub-menu-drop {
+		padding-left: 0rem !important;
+	}
+
+	&__section {
+		width: 100%;
+		padding-top: 1.5rem;
+		padding-bottom: 2rem;
+		padding-left: 1rem;
+		color: $color-white;
+		letter-spacing: 0.2rem;
+		animation-name: not-collapsed-text;
+		animation-duration: 0.2s;
+
+		@keyframes not-collapsed-text {
+			from {
+				font-size: 1rem;
+				padding-left: 0rem;
+			}
+			to {
+				font-size: 1.6rem;
+				padding-left: 1rem;
+			}
+		}
+
+		&--collapsed {
+			padding-left: 0rem;
+			font-size: 1rem;
+			animation-name: collapsed-text;
+			animation-duration: 0.2s;
+
+			@keyframes collapsed-text {
+				from {
+					font-size: 1.6rem;
+					padding-left: 1rem;
+				}
+				to {
+					font-size: 1rem;
+					padding-left: 0rem;
+				}
+			}
+		}
+	}
+}

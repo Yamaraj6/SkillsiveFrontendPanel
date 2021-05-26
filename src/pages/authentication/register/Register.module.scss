@@ -1,0 +1,115 @@
+@import 'assets/colors.scss';
+@import 'assets/variables.scss';
+@import 'assets/mixins.scss';
+
+.box {
+	@include accountBox;
+	padding: 2.2rem 3rem 1.7rem;
+
+	@media screen and (max-width: #{$screen-sm-min}) {
+		padding: 0.52rem;
+
+		p {
+			max-width: 22.2rem;
+			margin: 1rem auto 0;
+		}
+	}
+
+	h3 {
+		white-space: nowrap;
+	}
+
+	&__text-content {
+		text-align: center;
+		h1 {
+			padding: 1.6rem 1.6rem 0.8rem 1.6rem;
+			font-weight: 700;
+			width: 70%;
+			margin: 0 auto;
+			line-height: 120%;
+
+			@media screen and (max-width: #{$screen-sm-min}) {
+				line-height: inherit;
+				width: 100%;
+			}
+		}
+
+		p {
+			width: 70%;
+			margin: 0 auto;
+			color: $color-grey;
+		}
+	}
+}
+
+.scrollbar,
+.inner {
+	padding: 1.6rem 1.6rem 0 1.6rem;
+	max-height: 40rem;
+
+	@media screen and (max-width: #{$screen-sm-min}) {
+		max-height: 100%;
+	}
+}
+
+.scrollbar {
+	overflow: auto;
+
+	@media screen and (max-width: #{$screen-sm-min}) {
+		overflow: visible;
+	}
+
+	&::-webkit-scrollbar-track {
+		margin-top: 1.6rem;
+		background-color: transparent;
+	}
+
+	&:-webkit-scrollbar {
+		width: 0.8rem;
+		background-color: transparent;
+		border: none;
+		z-index: 2;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		opacity: 0.2;
+		background: $color-grey-3 0% 0% no-repeat padding-box;
+		border-radius: 10px;
+		height: 1.6rem !important;
+		z-index: 2;
+	}
+
+	&::-webkit-scrollbar-track-piece:end {
+		background: transparent;
+		margin-bottom: 3.2rem;
+	}
+
+	&::-webkit-scrollbar-track-piece:start {
+		background: transparent;
+		margin-top: 3.2rem;
+	}
+}
+
+.register-form-button {
+	padding: 1.6rem 1.6rem 0 1.6rem;
+	margin-bottom: 0;
+
+	button {
+		@include Button-1;
+	}
+}
+
+.register-form-checkbox {
+	padding: 0.8rem 1.6rem 0 1.6rem;
+	margin-bottom: 0.8rem;
+}
+
+.back-to-account {
+	padding: 2.4rem;
+	p {
+		color: $color-grey;
+	}
+	a {
+		font-weight: 500;
+	}
+}

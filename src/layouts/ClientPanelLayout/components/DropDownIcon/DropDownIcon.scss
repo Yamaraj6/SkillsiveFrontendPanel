@@ -1,0 +1,32 @@
+@import 'assets/colors.scss';
+
+.ant-menu-submenu-drop-down {
+	fill: $color-grey;
+}
+
+.ant-menu-inline-collapsed > li > div > i {
+	display: none;
+}
+
+.ant-menu-submenu-open > .ant-menu-submenu-title > i > .ant-menu-submenu-drop-down {
+	fill: $color-white !important;
+	transform: rotate(180deg);
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title i > .ant-menu-submenu-drop-down {
+	fill: $color-blue !important;
+}
+
+.ant-menu-submenu-active > .ant-menu-submenu-title > i > .ant-menu-submenu-drop-down {
+	fill: $color-white !important;
+}
+
+.ant-menu-submenu-selected.ant-menu-submenu-active > .ant-menu-submenu-title > i > .ant-menu-submenu-drop-down {
+	fill: $color-blue !important;
+}
+
+.ant-menu-submenu-selected.ant-menu-submenu-active > .ant-menu-submenu-title {
+	&:hover {
+		color: $color-blue !important;
+	}
+}

@@ -1,0 +1,58 @@
+@import 'assets/colors.scss';
+@import 'assets/variables.scss';
+
+.menu {
+	z-index: 200;
+	width: 100vw;
+	background-color: $color-white;
+	margin-top: 1.5rem;
+	box-shadow: 0rem 5rem 6rem $color-shadow-grey;
+	padding-top: 2rem;
+	color: $color-dark;
+
+	hr {
+		border-color: $color-grey;
+		border-top: 0.05rem;
+		width: 80%;
+		opacity: 0.2;
+		margin-bottom: 2rem;
+	}
+
+	@media screen and (min-width: $screen-md-min) {
+		width: 21.5rem;
+		border-radius: 1.5rem;
+	}
+
+	&__item {
+		padding-left: 2rem;
+		padding-bottom: 2rem;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		&-info {
+			padding: 0 2rem 2rem 2rem;
+			display: flex;
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			color: $color-grey;
+
+			span {
+				color: $color-blue;
+			}
+		}
+
+		h4 {
+			margin: 0;
+			padding-right: 2rem;
+			padding-left: 3rem;
+			font-size: 1.6rem;
+			transition: ease-in-out 250ms;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+}

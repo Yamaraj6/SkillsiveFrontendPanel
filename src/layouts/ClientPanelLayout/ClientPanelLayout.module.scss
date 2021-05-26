@@ -1,0 +1,124 @@
+@import 'assets/variables.scss';
+@import 'assets/colors.scss';
+
+.header {
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+	box-shadow: 0px 1rem 2rem $color-shadow-grey;
+	height: 8rem !important;
+
+	@media screen and (min-width: #{$screen-antd-sm-min}) {
+		padding: 0 4rem;
+	}
+
+	&__logo {
+		height: 45%;
+		margin: auto 0;
+		cursor: pointer;
+	}
+}
+
+.header-user {
+	display: flex;
+	align-items: center;
+
+	&__badge sup {
+		position: absolute;
+		right: 2.85rem;
+		top: 0.45rem;
+		background: $color-blue;
+	}
+
+	&__shopping-cart {
+		cursor: pointer;
+
+		span {
+			color: $color-grey !important;
+		}
+	}
+}
+
+.header-user-personal-data {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 1rem;
+
+	&__name {
+		font-size: 1.5rem;
+		color: $color-dark;
+		font-weight: bold;
+		padding-bottom: 0.2rem;
+	}
+
+	&__email {
+		font-size: 1.2rem;
+		color: $color-grey;
+	}
+}
+
+.main {
+	height: calc(100vh - 8rem);
+	overflow: auto;
+	margin-right: 0rem;
+	background: $color-background;
+
+	@media screen and (min-width: #{$screen-antd-sm-min}) {
+		padding-right: 1rem;
+	}
+}
+
+.main-content {
+	min-height: calc(100vh - 8rem);
+	padding: 1rem 1rem 2rem 3rem;
+	position: relative;
+	filter: blur(0px) brightness(1);
+	transition: -webkit-filter 300ms linear;
+	-webkit-transition: -webkit-filter 300ms linear;
+	background-color: $color-background;
+
+	@media screen and (max-width: #{$screen-antd-sm-min}) {
+		padding: 0rem;
+	}
+
+	&--dropdown-visible {
+		filter: blur(0.3rem) brightness(0.95);
+		transition: -webkit-filter 300ms linear;
+		-webkit-transition: -webkit-filter 300ms linear;
+		margin-top: -0.01rem;
+	}
+}
+
+.mask {
+	filter: blur(0.3rem) brightness(0.95);
+	transition: -webkit-filter 300ms linear;
+	-webkit-transition: -webkit-filter 300ms linear;
+	margin-top: -0.01rem;
+}
+
+.main-content-header {
+	display: flex;
+	padding-left: 2rem;
+	padding-top: 1.5rem;
+	justify-content: unset;
+
+	@media screen and (min-width: #{$screen-antd-sm-min}) {
+		justify-content: space-between;
+		padding-bottom: 1.5rem;
+	}
+
+	&__title {
+		color: $color-dark;
+		font-size: 2.1rem;
+		font-weight: bold;
+	}
+}
+
+.dropdown {
+	&__box {
+		display: flex;
+		cursor: pointer;
+	}
+}
