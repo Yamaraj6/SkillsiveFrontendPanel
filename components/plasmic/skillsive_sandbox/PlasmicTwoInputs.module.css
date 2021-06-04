@@ -1,0 +1,14 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-width: 0;
+}
+.inputP___9Sbcl:global(.__wab_instance) {
+	position: relative;
+}
+.inputP__g6BNw:global(.__wab_instance) {
+	position: relative;
+}

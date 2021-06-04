@@ -1,0 +1,33 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-width: 0;
+}
+.inputP__i7Okm:global(.__wab_instance) {
+	position: relative;
+}
+.inputP__dlQuK:global(.__wab_instance) {
+	position: relative;
+	left: auto;
+	top: auto;
+}
+.inputP__nJm4O:global(.__wab_instance) {
+	position: relative;
+	left: auto;
+	top: auto;
+}
+.test {
+	display: block;
+	position: relative;
+}
+.textbox {
+	position: relative;
+	width: 297px;
+	left: auto;
+	top: auto;
+	height: 71px;
+	flex-shrink: 0;
+}

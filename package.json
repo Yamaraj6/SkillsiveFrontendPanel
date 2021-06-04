@@ -9,9 +9,11 @@
 		"build-antd-theme": "lessc --js ./src/assets/skillsive-antd-theme.less ./src/assets/skillsive-antd-theme.css"
 	},
 	"dependencies": {
-		"@builder.io/react": "^1.1.42",
 		"@ant-design/icons": "^4.2.2",
+		"@builder.io/react": "^1.1.42",
 		"@fortawesome/fontawesome-free": "^5.15.1",
+		"@plasmicapp/cli": "^0.1.152",
+		"@plasmicapp/react-web": "^0.2.61",
 		"@react-hook/window-size": "^3.0.7",
 		"@types/react-facebook-login": "^4.1.3",
 		"@zeit/next-css": "^1.0.1",

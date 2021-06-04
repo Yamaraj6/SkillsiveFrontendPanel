@@ -1,0 +1,99 @@
+{
+  "props": [
+    {
+      "name": "ButtonBackground2",
+      "type": "color",
+      "value": "#2C89C8",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "GHKoL-9cl"
+      }
+    },
+    {
+      "name": "ButtonColor",
+      "type": "color",
+      "value": "#A4DAFF",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "CSWOcS3SW"
+      }
+    },
+    {
+      "name": "ButtonFontColor",
+      "type": "color",
+      "value": "rgba(255, 255, 255, 1)",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "ZP4iHsQV7"
+      }
+    },
+    {
+      "name": "ButtonShadow",
+      "type": "color",
+      "value": "#56A2FC54",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "LUGunzkd0"
+      }
+    },
+    {
+      "name": "ContainerShadow",
+      "type": "color",
+      "value": "#9AA1AB0D",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "NBr5NCZDj"
+      }
+    },
+    {
+      "name": "FontColor",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "evm-VK-4H"
+      }
+    },
+    {
+      "name": "H1",
+      "type": "fontsize",
+      "value": "22px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "GUXcJkBvI"
+      }
+    },
+    {
+      "name": "H3",
+      "type": "fontsize",
+      "value": "16px",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "z7OjnDBYe"
+      }
+    },
+    {
+      "name": "LightFontColor",
+      "type": "color",
+      "value": "#A7B4CB",
+      "category": "color",
+      "meta": {
+        "projectId": "sGHXXiFJtxEudrKmGY7eVc",
+        "id": "q8MlnsMxE"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}

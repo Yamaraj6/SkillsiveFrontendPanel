@@ -1,0 +1,142 @@
+{
+	"platform": "nextjs",
+	"code": {
+		"lang": "ts",
+		"scheme": "blackbox",
+		"reactRuntime": "classic"
+	},
+	"style": {
+		"scheme": "css-modules",
+		"defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+	},
+	"images": {
+		"scheme": "public-files",
+		"publicDir": "../public",
+		"publicUrlPrefix": "/"
+	},
+	"tokens": {
+		"scheme": "theo",
+		"tokensFilePath": "plasmic-tokens.theo.json"
+	},
+	"srcDir": "components",
+	"defaultPlasmicDir": "./plasmic",
+	"projects": [
+		{
+			"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+			"projectName": "Skillsive Sandbox",
+			"version": "latest",
+			"cssFilePath": "plasmic/skillsive_sandbox/plasmic_skillsive_sandbox.module.css",
+			"components": [
+				{
+					"id": "-Q9PBtQ752jP",
+					"name": "Homepage",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicHomepage.tsx",
+					"importSpec": {
+						"modulePath": "Homepage.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicHomepage.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "dynsQ2nrxe",
+					"name": "ButtonBase",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicButtonBase.tsx",
+					"importSpec": {
+						"modulePath": "ButtonBase.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicButtonBase.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "T1m598nICr",
+					"name": "Ctest",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicCtest.tsx",
+					"importSpec": {
+						"modulePath": "Ctest.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicCtest.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "EI2IZZAvPf",
+					"name": "InputP",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicInputP.tsx",
+					"importSpec": {
+						"modulePath": "InputP.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicInputP.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "KepEW9LWvY",
+					"name": "TwoInputs",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicTwoInputs.tsx",
+					"importSpec": {
+						"modulePath": "TwoInputs.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicTwoInputs.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "zrs6XL3goK",
+					"name": "TwoInpusXxx",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicTwoInpusXxx.tsx",
+					"importSpec": {
+						"modulePath": "TwoInpusXxx.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicTwoInpusXxx.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				},
+				{
+					"id": "o-tQV3Qu4B",
+					"name": "ThreeInputsAndButton",
+					"type": "managed",
+					"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+					"renderModuleFilePath": "plasmic/skillsive_sandbox/PlasmicThreeInputsAndButton.tsx",
+					"importSpec": {
+						"modulePath": "ThreeInputsAndButton.tsx"
+					},
+					"cssFilePath": "plasmic/skillsive_sandbox/PlasmicThreeInputsAndButton.module.css",
+					"scheme": "blackbox",
+					"componentType": "component"
+				}
+			],
+			"icons": [],
+			"images": [],
+			"projectApiToken": "tGeuM6oEKLhlQmbxV8NNoaWtMspJHYRTJq1bNlIi6L6QpHzpYYBLEeP5rEZsMIBEMfT8WDd7rr978Bw"
+		}
+	],
+	"globalVariants": {
+		"variantGroups": [
+			{
+				"id": "mxXjSAVsL22J",
+				"name": "Screen",
+				"projectId": "sGHXXiFJtxEudrKmGY7eVc",
+				"contextFilePath": "plasmic/skillsive_sandbox/PlasmicGlobalVariant__Screen.tsx"
+			}
+		]
+	},
+	"nextjsConfig": {
+		"pagesDir": "../pages"
+	},
+	"cliVersion": "0.1.152",
+	"$schema": "https://unpkg.com/@plasmicapp/cli@0.1.152/dist/plasmic.schema.json"
+}

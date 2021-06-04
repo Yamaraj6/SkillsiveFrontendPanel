@@ -1,0 +1,14 @@
+.root {
+	box-shadow: 1px 6px 10px 2px #56a2fc54;
+	font-size: 22px /* plasmic-token: GUXcJkBvI */;
+	color: rgba(255, 255, 255, 1) /* plasmic-token: ZP4iHsQV7 */;
+	width: 210px;
+	height: 61px;
+	font-family: Calibri;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+	border-radius: 6px;
+	background: radial-gradient(ellipse 300% 200% at -50% -50%, #a4daff 0%, #2c89c8 100%);
+	border-width: 0px;
+}
